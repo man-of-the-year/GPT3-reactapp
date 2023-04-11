@@ -1,0 +1,98 @@
+.gpt3__cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 2rem;
+  margin: 4rem;
+  border-radius: 1rem;
+  background: var(--gradient-bar);
+  font-family: var(--font-family);
+  flex-wrap: wrap;
+  gap: 20px;
+
+  &-content {
+
+    & p {
+      font-size: 12px;
+      line-height: 30px;
+      color: #0E0E0E;
+    }
+
+    & h3 {
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 45px;
+      color: #000;
+    }
+  }
+
+  &-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & button {
+      background: #000;
+      color: #fff;
+      border-radius: 40px;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 30px;
+      padding: 0.5rem 1rem;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: .3s;
+      min-width: 150px;
+
+      &:hover {
+        background: #2a2a2a;
+        transition: .3s;
+      }
+    }
+  }
+}
+
+@media screen and (width<650px) {
+ .gpt3__cta {
+
+  &-content {
+
+    & h3 {
+      line-height: 24px;
+      font-size: 20px;
+    }
+  }
+ } 
+}
+
+@media screen and (width<550px) {
+  .gpt3__cta {
+    justify-content: center;
+
+    &-content {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (width<425px) {
+  .gpt3__cta {
+ 
+   &-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+     & h3 {
+       line-height: 18px;
+       font-size: 16px;
+     }
+
+     & p {
+      line-height: 18px;
+     }
+   }
+  } 
+ }
